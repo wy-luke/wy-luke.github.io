@@ -1,7 +1,8 @@
 baseURL: "https://wy-luke.github.io"
-title: Site
+title: GetArmed!
 paginate: 5
 theme: PaperMod
+defaultContentLanguage: zh
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -15,13 +16,39 @@ minify:
   minifyOutput: true
 
 languages:
+  zh:
+    languageName: "Chinese"
+    weight: 1
+    # taxonomies:
+    #   category: categories
+    #   tag: tags
+    #   series: series
+    menu:
+      main:
+        - name: Copy++
+          url: "https://github.com/CopyPlusPlus"
+          weight: 5
+        - name: 归档
+          url: archives
+          weight: 5
+        - name: 搜索
+          url: search/
+          weight: 10
+        - name: 标签
+          url: tags/
+          weight: 10
+        - name: 关于我
+          url: About/
+          weight: 10
+
+
   en:
     languageName: "English"
     weight: 1
-    taxonomies:
-      category: categories
-      tag: tags
-      series: series
+    # taxonomies:
+    #   category: categories
+    #   tag: tags
+    #   series: series
     menu:
       main:
         - name: Archive
@@ -36,30 +63,10 @@ languages:
         - name: About
           url: About/
           weight: 10
-  zh:
-    languageName: "Chinese"
-    weight: 1
-    taxonomies:
-      category: categories
-      tag: tags
-      series: series
-    menu:
-      main:
-        - name: 归档
-          url: archives
-          weight: 5
-        - name: 搜索
-          url: search/
-          weight: 10
-        - name: 标签
-          url: tags/
-          weight: 10
-        - name: 关于我
-          url: About/
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: Me Site
+  title: GetArmed!
   description: "wy-luke's blog"
   keywords: [Blog, Portfolio, PaperMod]
   author: 骛宇
@@ -73,7 +80,7 @@ params:
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
+  ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
@@ -128,10 +135,10 @@ params:
   analytics:
     google:
       SiteVerificationTag: "XYZabc"
-    bing:
-      SiteVerificationTag: "XYZabc"
-    yandex:
-      SiteVerificationTag: "XYZabc"
+    # bing:
+    #   SiteVerificationTag: "XYZabc"
+    # yandex:
+    #   SiteVerificationTag: "XYZabc"
 
   cover:
     hidden: true # hide everywhere but not in structured data
