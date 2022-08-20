@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Site</title>
+    <title>GetArmed!</title>
     <link>https://wy-luke.github.io/</link>
-    <description>Recent content on Site</description>
+    <description>Recent content on GetArmed!</description>
     <image>
       <url>https://wy-luke.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://wy-luke.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
@@ -16,7 +16,8 @@
       <pubDate>Sun, 14 Aug 2022 22:16:28 +0800</pubDate>
       
       <guid>https://wy-luke.github.io/posts/my-first-post/</guid>
-      <description>Hello world!</description>
+      <description>Hello world!
+你好，世界、阿张！</description>
     </item>
     
   </channel>

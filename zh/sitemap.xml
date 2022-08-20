@@ -2,52 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://wy-luke.github.io/zh/categories/</loc>
+    <loc>https://wy-luke.github.io/</loc>
+    <lastmod>2022-08-14T22:16:28+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wy-luke.github.io/categories/"
+                href="https://wy-luke.github.io/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://wy-luke.github.io/zh/categories/"
-                />
-  </url><url>
-    <loc>https://wy-luke.github.io/zh/series/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wy-luke.github.io/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://wy-luke.github.io/zh/series/"
-                />
-  </url><url>
-    <loc>https://wy-luke.github.io/zh/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
                 href="https://wy-luke.github.io/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://wy-luke.github.io/zh/"
-                />
   </url><url>
-    <loc>https://wy-luke.github.io/zh/tags/</loc>
+    <loc>https://wy-luke.github.io/posts/my-first-post/</loc>
+    <lastmod>2022-08-14T22:16:28+08:00</lastmod>
+  </url><url>
+    <loc>https://wy-luke.github.io/posts/</loc>
+    <lastmod>2022-08-14T22:16:28+08:00</lastmod>
+  </url><url>
+    <loc>https://wy-luke.github.io/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wy-luke.github.io/tags/"
+                href="https://wy-luke.github.io/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://wy-luke.github.io/zh/tags/"
+                href="https://wy-luke.github.io/categories/"
+                />
+  </url><url>
+    <loc>https://wy-luke.github.io/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wy-luke.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://wy-luke.github.io/tags/"
                 />
   </url>
 </urlset>
