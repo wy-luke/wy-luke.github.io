@@ -26,6 +26,18 @@
                 href="https://wy-luke.github.io/en/"
                 />
   </url><url>
+    <loc>https://wy-luke.github.io/en/series/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://wy-luke.github.io/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wy-luke.github.io/en/series/"
+                />
+  </url><url>
     <loc>https://wy-luke.github.io/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
