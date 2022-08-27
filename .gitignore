@@ -37,3 +37,4 @@ hugo.linux
 
 # Ignore code-workspaces
 *.code-workspace
+.vercel
