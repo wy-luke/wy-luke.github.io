@@ -96,7 +96,7 @@ params:
   disableScrollToTop: false
   comments: false
   hidemeta: false
-  hideSummary: false
+  hideSummary: true
   showtoc: false
   tocopen: false
 
