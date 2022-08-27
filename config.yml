@@ -4,7 +4,11 @@ paginate: 5
 theme: PaperMod
 defaultContentLanguage: zh
 
+enableInlineShortcodes: true
 enableRobotsTXT: true
+enableEmoji: true
+pygmentsUseClasses: true
+
 buildDrafts: false
 buildFuture: false
 buildExpired: false
@@ -13,56 +17,54 @@ buildExpired: false
 
 minify:
   disableXML: true
-  minifyOutput: true
+  #minifyOutput: true
 
 languages:
   zh:
     languageName: "Chinese"
     weight: 1
-    # taxonomies:
-    #   category: categories
-    #   tag: tags
-    #   series: series
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
     menu:
       main:
+        - name: 归档
+          url: archives
+          weight: 1
+        - name: 搜索
+          url: search/
+          weight: 2
+        - name: 标签
+          url: tags/
+          weight: 3
+        - name: 关于我
+          url: about/
+          weight: 4
         - name: Copy++
           url: "https://github.com/CopyPlusPlus"
           weight: 5
-        - name: 归档
-          url: archives
-          weight: 5
-        - name: 搜索
-          url: search/
-          weight: 10
-        - name: 标签
-          url: tags/
-          weight: 10
-        - name: 关于我
-          url: About/
-          weight: 10
-
-
   en:
     languageName: "English"
-    weight: 1
-    # taxonomies:
-    #   category: categories
-    #   tag: tags
-    #   series: series
+    weight: 2
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
     menu:
       main:
         - name: Archive
           url: archives
-          weight: 5
+          weight: 1
         - name: Search
           url: search/
-          weight: 10
+          weight: 2
         - name: Tags
           url: tags/
-          weight: 10
+          weight: 3
         - name: About
-          url: About/
-          weight: 10
+          url: about/
+          weight: 4
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
