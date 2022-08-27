@@ -9,14 +9,56 @@
       <link>https://wy-luke.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://wy-luke.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Aug 2022 10:02:26 +0800</lastBuildDate><atom:link href="https://wy-luke.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My 1st post</title>
-      <link>https://wy-luke.github.io/posts/my-first-post/</link>
-      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      <title>Java 中基本类型与引用类型的深拷贝和浅拷贝</title>
+      <link>https://wy-luke.github.io/posts/deep-shallow-copy/</link>
+      <pubDate>Wed, 10 Aug 2022 10:02:26 +0800</pubDate>
       
-      <guid>https://wy-luke.github.io/posts/my-first-post/</guid>
-      <description>Desc Text.</description>
+      <guid>https://wy-luke.github.io/posts/deep-shallow-copy/</guid>
+      <description>数据分为基本数据类型和引用数据类型
+众所周知，（一般）变量是存在栈中的
+基本数据类型的变量：数据直接存储在栈中 引用数据类型的变量：栈中存储的是一个指针，指向堆中的一块内存，真实的数据存放在堆内存里
+对于一般拷贝操作而言，就是把栈中的数据拷贝一份，内容和原来一样
+基本类型 所以，对于基本类型，由于数据直接存储在栈中，拷贝一份就意味着把数据拷贝了一份
+比如int x = 4，那么栈中就有一块内存储存了4，int y = x就是在栈中新建一个变量(一块内存)，并拷贝源数据，即4，
+所以此时栈中有两块内存储存的都是4，一个是x一个是y，更改x的值不会影响y，反之同样
+所以基本类型默认就是深拷贝
+那么，对于基本类型，怎么实现浅拷贝呢？C++在某种意义上实现可以通过指针或引用实现，而Java没有指针，所以并不太好实现，可以参考这里
+引用类型 对于引用类型就不太一样了，int[] x = new int[] {1,2}时，在栈中有一个变量x，指向堆内存中的数组
+int[] y = x时，复制栈中的数据，也就是说，在栈中新建了一个指针y，和x指向同一块堆内存，也就是刚才的数组
+所以此时栈中有两块内存储存的都是指针，一个是x一个是y，但是指向同一块堆内存，更改x的值，如x[1] = 2，y的值也会发生改变
+这就是浅拷贝，所以java引用类型默认是浅拷贝
+而深拷贝是要在栈中新建一个变量的同时，并且在堆中也新建一块内存，把要复制的值存进去，并将在栈中新建的变量指向堆中新建的内存
+即： 浅拷贝：在栈中新建一个变量，还是指向同一块内存 深拷贝：在栈中新建一个变量，并且在堆中也新建一块内存，把要复制的值存进去，将在栈中新建的变量指向堆中新建的内存
+那么，既然用=复制是浅拷贝，怎样能够实现深拷贝呢？
+对于数组，当然可以通过.clone()
+int[] src = ... int[] dest = src.clone(); 对于class，一种比较安全的方法是先序列化，然后反序列号，可以参考这里
+特殊的 String 类型 Java中的String类型比较特殊，虽然他是引用类型，但是他具有不可变性，也就是说，在堆内存中的一块String，如&amp;quot;hello&amp;quot;，内容是不能更改的
+string x = &amp;quot;hello&amp;quot;后，再改变x的值：x=&amp;quot;world&amp;quot;，会在堆内存中重新划一块内存，储存&amp;quot;world&amp;quot;，并将x指向新内存，原有内存后续如果没有被引用就会被清理掉（垃圾回收）
+然而，若我们string x = &amp;quot;hello后string y = x，y和x指向同一块堆内存&amp;quot;hello&amp;quot;，但是如上一段所说，x=&amp;quot;world&amp;quot;会在堆中新建一块内存，而不是更改原有内存的数据，也就是说，现在，x指向world，而y依然指向hello
+所以对String虽然是引用类型，但是直接使用=等号，是深拷贝
+更详细的证明见这里</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; STL 二分 lower_bound / upper_bound 用法详解</title>
+      <link>https://wy-luke.github.io/posts/binary-search/</link>
+      <pubDate>Wed, 25 May 2022 14:44:19 +0800</pubDate>
+      
+      <guid>https://wy-luke.github.io/posts/binary-search/</guid>
+      <description>假设我们要在一个 vector&amp;lt;int&amp;gt; 中，查找一个数 value
+语法 auto p = std::lower_bound(v.begin(), v.end(), value) auto p = std::upper_bound(v.begin(), v.end(), value) 返回的值类型是 iterator 即迭代器，理解为指针即可
+定义 lower_bound 获取第一个大于等于value的指针
+is not less than
+upper_bound 获取第一个大于 value的指针
+is greater than value
+用法详解 由上可以引申出多种用法：
+要查找的每个数都存在时，如果这个数只存在一次 lower_bound 和 upper_bound - 1 结果一样，同样指向该数，upper_bound 指向第一个大于value的数
+要查找的每个数都存在时，如果这个数存在多次 lower_bound 能查找到左侧边界，upper_bound - 1 能查找到右侧边界
+要查找的数不在时 lower_bound 和 upper_bound 结果一样，同样指向第一个大于value的数
+引申 STL 里面还有一个 equal_range()，就是返回一个pair，分别为 lower_bound 和 upper_bound 的结果
+可以理解为一个左闭右开 [start, end) ，区间为要查找的 vector 里面，等于 value 的部分</description>
     </item>
     
   </channel>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>算法 on GetArmed!</title>
+    <link>https://wy-luke.github.io/tags/%E7%AE%97%E6%B3%95/</link>
+    <description>Recent content in 算法 on GetArmed!</description>
+    <image>
+      <url>https://wy-luke.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://wy-luke.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 25 May 2022 14:44:19 +0800</lastBuildDate><atom:link href="https://wy-luke.github.io/tags/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C&#43;&#43; STL 二分 lower_bound / upper_bound 用法详解</title>
+      <link>https://wy-luke.github.io/posts/binary-search/</link>
+      <pubDate>Wed, 25 May 2022 14:44:19 +0800</pubDate>
+      
+      <guid>https://wy-luke.github.io/posts/binary-search/</guid>
+      <description>假设我们要在一个 vector&amp;lt;int&amp;gt; 中，查找一个数 value
+语法 auto p = std::lower_bound(v.begin(), v.end(), value) auto p = std::upper_bound(v.begin(), v.end(), value) 返回的值类型是 iterator 即迭代器，理解为指针即可
+定义 lower_bound 获取第一个大于等于value的指针
+is not less than
+upper_bound 获取第一个大于 value的指针
+is greater than value
+用法详解 由上可以引申出多种用法：
+要查找的每个数都存在时，如果这个数只存在一次 lower_bound 和 upper_bound - 1 结果一样，同样指向该数，upper_bound 指向第一个大于value的数
+要查找的每个数都存在时，如果这个数存在多次 lower_bound 能查找到左侧边界，upper_bound - 1 能查找到右侧边界
+要查找的数不在时 lower_bound 和 upper_bound 结果一样，同样指向第一个大于value的数
+引申 STL 里面还有一个 equal_range()，就是返回一个pair，分别为 lower_bound 和 upper_bound 的结果
+可以理解为一个左闭右开 [start, end) ，区间为要查找的 vector 里面，等于 value 的部分</description>
+    </item>
+    
+  </channel>
+</rss>
