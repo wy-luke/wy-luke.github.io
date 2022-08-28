@@ -30,5 +30,21 @@ is greater than value
 可以理解为一个左闭右开 [start, end) ，区间为要查找的 vector 里面，等于 value 的部分</description>
     </item>
     
+    <item>
+      <title>C&#43;&#43; 自定义排序顺序详解，优先级队列 &#43; lambda 表达式</title>
+      <link>https://wy-luke.github.io/posts/custom-sort/</link>
+      <pubDate>Sun, 27 Mar 2022 21:41:03 +0800</pubDate>
+      
+      <guid>https://wy-luke.github.io/posts/custom-sort/</guid>
+      <description>1. C++ named requirements ( 具名要求 ) : Compare C++ 中没有 Comparator 类，Campare 是一个 requirement ，可以理解为一种定义，要求。
+yields true if the first argument of the call appears before the second in the strict weak ordering relation induced by this type, and false otherwise.
+人话来讲，比较两个参数，返回 bool 值，当返回 true 时，第一个参数排在第二个参数前面，即第一个参数先进入 Container（如 vector ）
+注意这里只关心返回 true 时的情况， 当两个参数相等（即无排序要求）和第一个参数在后面、第二个参数在前面时，都返回 false，在自定义 Campare 时需要注意这一点！！！
+也就是说，在自定义 Campare 时，当第一个参数排在第二个参数前面时，返回 true ，其他情况均返回false
+所以，在排序时，如果要保持相等元素的相对位置，即稳定排序，要用stable_sort()
+否则，用sort()即可（不能保证相等元素相对位置不变）
+2. std::greater std::less std::greater : 当第一个参数大于第二个参数时，返回 true</description>
+    </item>
+    
   </channel>
 </rss>

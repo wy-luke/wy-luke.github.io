@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>编程 on GetArmed!</title>
+    <link>https://wy-luke.github.io/tags/%E7%BC%96%E7%A8%8B/</link>
+    <description>Recent content in 编程 on GetArmed!</description>
+    <image>
+      <url>https://wy-luke.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://wy-luke.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 24 May 2022 00:02:53 +0800</lastBuildDate><atom:link href="https://wy-luke.github.io/tags/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>为什么 int 类型最大值为 2^31-1，最小值为 -2^31</title>
+      <link>https://wy-luke.github.io/posts/int-range/</link>
+      <pubDate>Tue, 24 May 2022 00:02:53 +0800</pubDate>
+      
+      <guid>https://wy-luke.github.io/posts/int-range/</guid>
+      <description>一个 int 占 4 字节（Byte），也就是 32 位（Bit），其中第一位用来存储正负号，1 表示负数，0 表示正数
+也就是说，共有 31 位用来存储数据，所以，能够存储数字的总个数为 2^31=2147483648 （10^9）
+而在某种程度上，可以理解为，在存储上，0 被归为了正数
+所以正数最大值为 2^31-1，而负数最小值就是2^31
+更形象的解释看下面：
+Int32.MaxValue = 2^31 - 1 = 01111111111111111111111111111111 1 = 00000000000000000000000000000001 0 = 00000000000000000000000000000000 -1 = 11111111111111111111111111111111 Int32.MinValue = -2^31 = 10000000000000000000000000000000 可以明显的看出，为什么 int 类型最大值为 2^31-1，而最小值是2^31</description>
+    </item>
+    
+  </channel>
+</rss>
