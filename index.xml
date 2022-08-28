@@ -108,7 +108,7 @@ std::random_device rd; //Will be used to obtain a seed for the random number eng
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://wy-luke.github.io/about/</guid>
-      <description>Hi there, I&amp;rsquo;m Luke ⚙️ Creator of Copy++. 📈 I’m currently learning Qt(C++), .Net(C#), Electron(JavaScript), Unity and Deep Learning. Copy++ About Me </description>
+      <description>Hi there, I&amp;rsquo;m Luke ⚙️ Creator of Copy++. About Me </description>
     </item>
     
     
