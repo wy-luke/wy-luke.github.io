@@ -9,11 +9,11 @@
       <link>https://wy-luke.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 30 Aug 2022 21:15:12 +0800</lastBuildDate><atom:link href="https://wy-luke.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Jul 2021 22:20:32 +0800</lastBuildDate><atom:link href="https://wy-luke.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python中列表截取（Slice，即冒号 : ）的用法详解</title>
       <link>https://wy-luke.github.io/posts/python-slice/</link>
-      <pubDate>Tue, 30 Aug 2022 21:15:12 +0800</pubDate>
+      <pubDate>Tue, 13 Jul 2021 22:20:32 +0800</pubDate>
       
       <guid>https://wy-luke.github.io/posts/python-slice/</guid>
       <description>1. 基本用法 a[start:stop] # 从 index=start 开始（即包含start），到 index=stop-1（即不包含stop） a[start:] # 从 index=start 开始（包含 start ），到最后 a[:stop] # 从头开始，到 stop-1 a[:] # 取整个 List 注意：

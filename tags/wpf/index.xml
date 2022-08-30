@@ -9,11 +9,11 @@
       <link>https://wy-luke.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 30 Aug 2022 21:20:41 +0800</lastBuildDate><atom:link href="https://wy-luke.github.io/tags/wpf/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 May 2022 15:20:39 +0800</lastBuildDate><atom:link href="https://wy-luke.github.io/tags/wpf/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>WPF中获取主窗口 MainWindow 实例，以及在其他窗口中获取 MainWinodw 中的控件</title>
       <link>https://wy-luke.github.io/posts/wpf-get-mainwindow/</link>
-      <pubDate>Tue, 30 Aug 2022 21:20:41 +0800</pubDate>
+      <pubDate>Wed, 18 May 2022 15:20:39 +0800</pubDate>
       
       <guid>https://wy-luke.github.io/posts/wpf-get-mainwindow/</guid>
       <description>由于WPF执行的方式有些奇怪，并不是一般意义上的 “类&amp;ndash;实例化”
