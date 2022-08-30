@@ -1,6 +1,6 @@
 ---
 title: "WPF中获取主窗口 MainWindow 实例，以及在其他窗口中获取 MainWinodw 中的控件"
-date: 2022-08-30T21:20:41+08:00
+date: 2022-05-18T15:20:39+08:00
 tags: ["WPF","C#"]
 ---
 
