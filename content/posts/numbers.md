@@ -55,3 +55,9 @@ x = (-100) + (-100);
 signed char x;
 x = 200 + 200;
 因此上面代码会输出-112。如果x的结果为负数且超出了255，则取结果的低八位，并进行补码的反向操作，减一后取反。
+
+参考：
+
+<https://en.wikipedia.org/wiki/Integer_overflow>
+
+<https://zhuanlan.zhihu.com/p/28563004>
