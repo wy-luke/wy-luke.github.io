@@ -2,8 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://wy-luke.github.io/tags/c&#43;&#43;/</loc>
+    <lastmod>2022-08-30T20:01:50+08:00</lastmod>
+  </url><url>
     <loc>https://wy-luke.github.io/</loc>
-    <lastmod>2022-08-10T10:02:26+08:00</lastmod>
+    <lastmod>2022-08-30T20:01:50+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,17 +18,11 @@
                 href="https://wy-luke.github.io/"
                 />
   </url><url>
-    <loc>https://wy-luke.github.io/tags/java/</loc>
-    <lastmod>2022-08-10T10:02:26+08:00</lastmod>
-  </url><url>
-    <loc>https://wy-luke.github.io/posts/deep-shallow-copy/</loc>
-    <lastmod>2022-08-10T10:02:26+08:00</lastmod>
-  </url><url>
     <loc>https://wy-luke.github.io/posts/</loc>
-    <lastmod>2022-08-10T10:02:26+08:00</lastmod>
+    <lastmod>2022-08-30T20:01:50+08:00</lastmod>
   </url><url>
     <loc>https://wy-luke.github.io/tags/</loc>
-    <lastmod>2022-08-10T10:02:26+08:00</lastmod>
+    <lastmod>2022-08-30T20:01:50+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -37,8 +34,17 @@
                 href="https://wy-luke.github.io/tags/"
                 />
   </url><url>
-    <loc>https://wy-luke.github.io/tags/c&#43;&#43;/</loc>
-    <lastmod>2022-05-25T14:44:19+08:00</lastmod>
+    <loc>https://wy-luke.github.io/tags/%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2022-08-30T20:01:50+08:00</lastmod>
+  </url><url>
+    <loc>https://wy-luke.github.io/posts/numbers/</loc>
+    <lastmod>2022-08-30T20:01:50+08:00</lastmod>
+  </url><url>
+    <loc>https://wy-luke.github.io/tags/java/</loc>
+    <lastmod>2022-08-10T10:02:26+08:00</lastmod>
+  </url><url>
+    <loc>https://wy-luke.github.io/posts/deep-shallow-copy/</loc>
+    <lastmod>2022-08-10T10:02:26+08:00</lastmod>
   </url><url>
     <loc>https://wy-luke.github.io/posts/binary-search/</loc>
     <lastmod>2022-05-25T14:44:19+08:00</lastmod>
@@ -48,9 +54,6 @@
   </url><url>
     <loc>https://wy-luke.github.io/tags/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2022-05-25T14:44:19+08:00</lastmod>
-  </url><url>
-    <loc>https://wy-luke.github.io/tags/%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2022-05-24T00:02:53+08:00</lastmod>
   </url><url>
     <loc>https://wy-luke.github.io/posts/int-range/</loc>
     <lastmod>2022-05-24T00:02:53+08:00</lastmod>

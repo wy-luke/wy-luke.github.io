@@ -9,7 +9,32 @@
       <link>https://wy-luke.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 10 Aug 2022 10:02:26 +0800</lastBuildDate><atom:link href="https://wy-luke.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Aug 2022 20:01:50 +0800</lastBuildDate><atom:link href="https://wy-luke.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>深挖数字的二进制表示与运算溢出</title>
+      <link>https://wy-luke.github.io/posts/numbers/</link>
+      <pubDate>Tue, 30 Aug 2022 20:01:50 +0800</pubDate>
+      
+      <guid>https://wy-luke.github.io/posts/numbers/</guid>
+      <description>基本概念 首先说明一下三个名词：
+原码：一个整数，按照绝对值大小转换成的二进制数，称为原码。
+反码：将二进制数按位取反，所得的新二进制数称为原二进制数的反码。
+补码：反码加 1 称为补码。
+在计算机中，数字是以二进制形式储存的，如一个 int 为 4 字节，32 位，即可以 32 位二进制数表示
+数字又分为有符号（signed）和无符号（unsigned），即正负
+对于有符号类型，由第一位二进制数表示正负，0 表示正，1 表示负
+所以一个正数，其存储形式就是第一位 1 加上该正数的二进制
+而负数则是以其正值的补码形式表示（第一位 0 在这个过程就变成了 1）
+而对于无符号类型，不再使用第一位表示符号，所有位均用于存储数据，所以无符号类型比有符号类型的数值上限大两倍左右
+INT_MAN = (2^31)-1, UINT_MAX = (2^32)-1
+-1 是因为 0 的存在
+计算过程的溢出 无符号在溢出时，自动根据其位数取模
+对此 C/C++ 的规范是有定义的，“溢出后的数会以2^(8*sizeof(type))作模运算”，也就是说，如果一个 unsigned char（1 字符，8 bits）溢出了，会把溢出的值与 2^8=256 取模，int 溢出则是与 2^32 取模
+对于 signed 整型的溢出，C/C++ 的规范定义是“undefined behavior”，虽然没有定义，各编译器可自己实现，但是大部分的溢出机制都是一样的。
+有符号整型溢出又可分为向上溢出和向下溢出。假设用k个字节表示一个整型变量, 那么这个变量可以表示的有符号整数的范围是-2^(8k-1) ~ 2^(8k-1) – 1,那么两个正整数或者两个负整数相加就有可能超过这个整型变量所能表示的范围, 向上超出&amp;gt;2^(8k-1) – 1我们称之为向上溢出, 向下超出&amp;lt;-2^(8k-1), 我们称之为向下溢出.
+对于signed char,正整数最大值为127，负整数最小值为128。unsigned char所能表示的最大值为255。</description>
+    </item>
+    
     <item>
       <title>Java 中基本类型与引用类型的深拷贝和浅拷贝</title>
       <link>https://wy-luke.github.io/posts/deep-shallow-copy/</link>
