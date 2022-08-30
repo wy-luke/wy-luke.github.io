@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>WPF on GetArmed!</title>
+    <link>https://wy-luke.github.io/tags/wpf/</link>
+    <description>Recent content in WPF on GetArmed!</description>
+    <image>
+      <url>https://wy-luke.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://wy-luke.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 30 Aug 2022 21:20:41 +0800</lastBuildDate><atom:link href="https://wy-luke.github.io/tags/wpf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WPF中获取主窗口 MainWindow 实例，以及在其他窗口中获取 MainWinodw 中的控件</title>
+      <link>https://wy-luke.github.io/posts/wpf-get-mainwindow/</link>
+      <pubDate>Tue, 30 Aug 2022 21:20:41 +0800</pubDate>
+      
+      <guid>https://wy-luke.github.io/posts/wpf-get-mainwindow/</guid>
+      <description>由于WPF执行的方式有些奇怪，并不是一般意义上的 “类&amp;ndash;实例化”
+所以如果你想要在其他 Class 文件、或其他窗口中，执行 MainWindow 中的一些函数时；或者是想要获取 MainWindow 的某个控件，并对其操作时（比如你要在一个新的窗口中，改变 MainWindow 的一个 Switch 的开关状态），就非常麻烦
+你可以把需要使用的函数定义为 静态（Static），但是这样带来的限制非常多，而且这种方法不适用与获取控件
+经查阅，只需一行代码：
+var _mainWindow = Application.Current.Windows .Cast&amp;lt;Window&amp;gt;() .FirstOrDefault(window =&amp;gt; window is MainWindow) as MainWindow; Application.Current contains a collection of all windows in your application, you can get the other window with a query such as
+然后就可以对 MainWindow 中的任何函数或控件进行操作了，如：
+_mainWindow.Switch1.IsOn = false; 此时函数也无需定义为 静态（Static）了，非常方便。
+同理也适用于获取其他窗口，只需要将上面代码的 MainWindow 改为你需要寻找的窗口名即可
+参考链接: https://stackoverflow.com/questions/13644114/how-can-i-access-a-control-in-wpf-from-another-class-or-window/44988191#44988191</description>
+    </item>
+    
+  </channel>
+</rss>
