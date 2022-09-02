@@ -1,16 +1,17 @@
 ---
 title: "About"
-layout: "baseof"
+layout: "single"
 searchHidden: true
+hidemeta: true
+disableShare: true
+ShowPostNavLinks: false
 ---
 
-## Hi there, I'm Luke
+### Hi there, I'm Luke
 
-- ⚙️ Creator of [Copy++](https://github.com/CopyPlusPlus).
+- ⚙️ Creator of [Copy++](https://github.com/CopyPlusPlus)
 
 [![Readme Card](https://github-readme-stats-eight-cyan.vercel.app/api/pin/?username=CopyPlusPlus&repo=CopyPlusPlus)](https://github.com/CopyPlusPlus/CopyPlusPlus)
-
-### About Me
 
 | ![Star](https://github-readme-stats.vercel.app/api?username=wy-luke&count_private=true&show_icons=true) | ![Streak](https://github-readme-streak-stats.herokuapp.com/?user=wy-luke) |
 | :------------: | :-------------: |
