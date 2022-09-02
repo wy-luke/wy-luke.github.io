@@ -129,15 +129,16 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Title: "Knowledge is infinite 🚀"
+    Content: Stay Hungry.
 
   socialIcons:
     - name: stackoverflow
       url: "https://stackoverflow.com/users/9522354/even-wonder"
     - name: github
       url: "https://github.com/wy-luke"
-
+    - name: Rss
+      url: "index.xml"
   analytics:
     google:
       SiteVerificationTag: "G-WJ0DJVC4LD"
