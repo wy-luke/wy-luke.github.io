@@ -13,8 +13,6 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-#googleAnalytics: UA-123-45
-
 minify:
   disableXML: true
   #minifyOutput: true
@@ -29,24 +27,21 @@ languages:
       series: series
     menu:
       main:
-        - name: 归档
-          url: archives
+        - name: 标签
+          url: tags/
           weight: 1
         - name: 搜索
           url: search/
           weight: 2
-        - name: 标签
-          url: tags/
+        - name: 归档
+          url: archives
           weight: 3
-        - name: 关于我
-          url: about/
-          weight: 4
+        # - name: 关于我
+        #   url: about/
+        #   weight: 4
         - name: Copy++
           url: "https://github.com/CopyPlusPlus"
           weight: 5
-        - name: Github
-          url: "https://github.com/wy-luke"
-          weight: 6
   en:
     languageName: "English"
     weight: 2
@@ -113,7 +108,7 @@ params:
     safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "Home"
+    text: "主页"
     icon: /apple-touch-icon.png
     iconHeight: 35
 
@@ -134,18 +129,19 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Title: "Knowledge is infinite 🚀"
+    Content: Stay Hungry.
 
   socialIcons:
     - name: stackoverflow
       url: "https://stackoverflow.com/users/9522354/even-wonder"
     - name: github
       url: "https://github.com/wy-luke"
-
+    - name: Rss
+      url: "index.xml"
   analytics:
     google:
-      SiteVerificationTag: "XYZabc"
+      SiteVerificationTag: "G-WJ0DJVC4LD"
     # bing:
     #   SiteVerificationTag: "XYZabc"
     # yandex:
