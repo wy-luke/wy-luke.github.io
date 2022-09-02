@@ -70,6 +70,8 @@ outputs:
     - rss
     - json
 
+googleAnalytics: G-WJ0DJVC4LD
+
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: GetArmed!
@@ -139,6 +141,7 @@ params:
       url: "https://github.com/wy-luke"
     - name: Rss
       url: "index.xml"
+
   analytics:
     google:
       SiteVerificationTag: "G-WJ0DJVC4LD"
