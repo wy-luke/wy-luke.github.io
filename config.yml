@@ -27,18 +27,18 @@ languages:
       series: series
     menu:
       main:
-        - name: 归档
-          url: archives
+        - name: 标签
+          url: tags/
           weight: 1
         - name: 搜索
           url: search/
           weight: 2
-        - name: 标签
-          url: tags/
+        - name: 归档
+          url: archives
           weight: 3
-        - name: 关于我
-          url: about/
-          weight: 4
+        # - name: 关于我
+        #   url: about/
+        #   weight: 4
         - name: Copy++
           url: "https://github.com/CopyPlusPlus"
           weight: 5
@@ -108,7 +108,7 @@ params:
     safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "Home"
+    text: "主页"
     icon: /apple-touch-icon.png
     iconHeight: 35
 
