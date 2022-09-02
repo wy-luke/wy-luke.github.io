@@ -42,9 +42,6 @@ languages:
         - name: Copy++
           url: "https://github.com/CopyPlusPlus"
           weight: 5
-        - name: Github
-          url: "https://github.com/wy-luke"
-          weight: 6
   en:
     languageName: "English"
     weight: 2
