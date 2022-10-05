@@ -9,7 +9,24 @@
       <link>https://wy-luke.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 18 Sep 2022 17:18:10 +0800</lastBuildDate><atom:link href="https://wy-luke.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Oct 2022 19:43:51 +0800</lastBuildDate><atom:link href="https://wy-luke.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C&#43;&#43; 中的各种 find</title>
+      <link>https://wy-luke.github.io/posts/cpp-find/</link>
+      <pubDate>Wed, 05 Oct 2022 19:43:51 +0800</pubDate>
+      
+      <guid>https://wy-luke.github.io/posts/cpp-find/</guid>
+      <description>C++ 中 find 主要分为两种
+一种是 string 里封装的，只能针对 string 搜索，返回类型是 int 下标，没搜到时返回 string::npos
+一种是 &amp;lt;algorithm&amp;gt; 里封装的，能对各种东西搜索，返回类型是 iterator，没搜到时返回 end() 迭代器
+string 中的 find 现有一个 string s 搜索目标为 &amp;quot;abc&amp;quot;
+find(string&amp;amp; str, pos = 0) 用法：s.find(&amp;quot;abc&amp;quot;)
+Finds the first substring equal to the given character sequence. Search begins at pos, i.e. the found substring must not begin in a position preceding pos.
+找到搜索目标第一次出现的位置，即第一个 &amp;quot;abc&amp;quot; 出现的位置
+如果搜索目标为空，空字符串第一次出现的位置为字符串开头，即 s.find(t) 会返回 0
+find_first_of(string&amp;amp; str, pos = 0) 用法：s.</description>
+    </item>
+    
     <item>
       <title>C&#43;&#43; 处理输入</title>
       <link>https://wy-luke.github.io/posts/cpp-input/</link>

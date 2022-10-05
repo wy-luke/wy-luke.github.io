@@ -3,13 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://wy-luke.github.io/tags/c&#43;&#43;/</loc>
-    <lastmod>2022-09-18T17:18:10+08:00</lastmod>
+    <lastmod>2022-10-05T19:43:51+08:00</lastmod>
   </url><url>
-    <loc>https://wy-luke.github.io/posts/cpp-input/</loc>
-    <lastmod>2022-09-18T17:18:10+08:00</lastmod>
+    <loc>https://wy-luke.github.io/posts/cpp-find/</loc>
+    <lastmod>2022-10-05T19:43:51+08:00</lastmod>
   </url><url>
     <loc>https://wy-luke.github.io/</loc>
-    <lastmod>2022-09-18T17:18:10+08:00</lastmod>
+    <lastmod>2022-10-05T19:43:51+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -22,10 +22,10 @@
                 />
   </url><url>
     <loc>https://wy-luke.github.io/posts/</loc>
-    <lastmod>2022-09-18T17:18:10+08:00</lastmod>
+    <lastmod>2022-10-05T19:43:51+08:00</lastmod>
   </url><url>
     <loc>https://wy-luke.github.io/tags/</loc>
-    <lastmod>2022-09-18T17:18:10+08:00</lastmod>
+    <lastmod>2022-10-05T19:43:51+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -36,6 +36,9 @@
                 hreflang="zh"
                 href="https://wy-luke.github.io/tags/"
                 />
+  </url><url>
+    <loc>https://wy-luke.github.io/posts/cpp-input/</loc>
+    <lastmod>2022-09-18T17:18:10+08:00</lastmod>
   </url><url>
     <loc>https://wy-luke.github.io/tags/%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2022-08-30T20:01:50+08:00</lastmod>
