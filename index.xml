@@ -9,7 +9,17 @@
       <link>https://wy-luke.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 30 Aug 2022 20:01:50 +0800</lastBuildDate><atom:link href="https://wy-luke.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Sep 2022 17:18:10 +0800</lastBuildDate><atom:link href="https://wy-luke.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C&#43;&#43; 处理输入</title>
+      <link>https://wy-luke.github.io/posts/cpp-input/</link>
+      <pubDate>Sun, 18 Sep 2022 17:18:10 +0800</pubDate>
+      
+      <guid>https://wy-luke.github.io/posts/cpp-input/</guid>
+      <description>1. 输入一个数 int a; cin &amp;gt;&amp;gt; a; 2. 连续输入一个数 int a; while (cin &amp;gt;&amp;gt; a) { } 3. 按行读取 每次读取一行输入，包含空格，已回车换行结束
+string input; while (getline(cin, input)) { } 4. 按行读取后，提取每行的字符串 字符串之间用空格间隔 string input; while (getline(cin, input)) { istringstream iss(input); string str; // &amp;#34;&amp;gt;&amp;gt;&amp;#34;会忽视字符串之间所有的回车和空格，即每次读取一个有效字符串输入 // 在这里 iss 是每行的输入，不包含回车，所以 &amp;#34;&amp;gt;&amp;gt;&amp;#34; 会忽视掉字符串中间的所有空格 while(iss &amp;gt;&amp;gt; str) { } } 字符串之间用逗号（或其他任意字符）间隔 string input; while (getline(cin, input)) { istringstream iss(input); string str; // 提取分隔符之间的字符串，注意这里提取出的可以是空字符串 // 若 &amp;#34;a,,b&amp;#34; 则提取出 a b 和一个空字符串 // 同时，若以间隔符结尾，则不会再记入一个空字符串 // 若 &amp;#34;,,&amp;#34; 则提取出 2 个空字符串 while(getline(iss, str, &amp;#39;,&amp;#39;)) { } } </description>
+    </item>
+    
     <item>
       <title>深挖数字的二进制表示与运算溢出</title>
       <link>https://wy-luke.github.io/posts/numbers/</link>
