@@ -10,7 +10,7 @@ C++ 中 `find` 主要分为两种
 
 一种是 `<algorithm>` 里封装的，能对各种东西搜索，返回类型是 `iterator`，没搜到时返回 `end()` 迭代器
 
-## string 中的 find
+## 1. string 中的 find
 
 现有一个 `string s` 搜索目标为 `"abc"`
 
@@ -34,7 +34,7 @@ Finds the first character equal to **one of** the characters in the given charac
 
 如果搜索目标为空，即搜索目标中不包含任何字符，所以什么都找不到， `s.find_first_of(t)` 会返回 `npos`
 
-## find
+## 2. find
 
 ```c++
 #include <iostream>
