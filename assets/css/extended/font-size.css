@@ -2,3 +2,35 @@
   font-size: 20px;
   line-height: 1.5;
 }
+
+.post-title {
+  font-size: 30px;
+}
+
+.post-content {
+  font-size: 15px;
+}
+
+.post-content h1 {
+  font-size: 25px;
+}
+
+.post-content h2 {
+  font-size: 22px;
+}
+
+.post-content h3 {
+  font-size: 20px;
+}
+
+.post-content h4 {
+  font-size: 18px;
+}
+
+.post-content h5 {
+  font-size: 15px;
+}
+
+.post-content h6 {
+  font-size: 15px;
+}
